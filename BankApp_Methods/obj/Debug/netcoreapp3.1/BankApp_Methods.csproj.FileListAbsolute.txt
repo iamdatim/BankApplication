@@ -8,3 +8,13 @@ C:\Users\Dairo.T\Desktop\Personnal Project\BankApp_Methods\obj\Debug\netcoreapp3
 C:\Users\Dairo.T\Desktop\Personnal Project\BankApp_Methods\obj\Debug\netcoreapp3.1\BankApp_Methods.csproj.CoreCompileInputs.cache
 C:\Users\Dairo.T\Desktop\Personnal Project\BankApp_Methods\obj\Debug\netcoreapp3.1\BankApp_Methods.dll
 C:\Users\Dairo.T\Desktop\Personnal Project\BankApp_Methods\obj\Debug\netcoreapp3.1\BankApp_Methods.pdb
+C:\Users\Dairo.T\Source\Repos\BankApplication\BankApp_Methods\bin\Debug\netcoreapp3.1\BankApp_Methods.deps.json
+C:\Users\Dairo.T\Source\Repos\BankApplication\BankApp_Methods\bin\Debug\netcoreapp3.1\BankApp_Methods.dll
+C:\Users\Dairo.T\Source\Repos\BankApplication\BankApp_Methods\bin\Debug\netcoreapp3.1\BankApp_Methods.pdb
+C:\Users\Dairo.T\Source\Repos\BankApplication\BankApp_Methods\obj\Debug\netcoreapp3.1\BankApp_Methods.csproj.AssemblyReference.cache
+C:\Users\Dairo.T\Source\Repos\BankApplication\BankApp_Methods\obj\Debug\netcoreapp3.1\BankApp_Methods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dairo.T\Source\Repos\BankApplication\BankApp_Methods\obj\Debug\netcoreapp3.1\BankApp_Methods.AssemblyInfoInputs.cache
+C:\Users\Dairo.T\Source\Repos\BankApplication\BankApp_Methods\obj\Debug\netcoreapp3.1\BankApp_Methods.AssemblyInfo.cs
+C:\Users\Dairo.T\Source\Repos\BankApplication\BankApp_Methods\obj\Debug\netcoreapp3.1\BankApp_Methods.csproj.CoreCompileInputs.cache
+C:\Users\Dairo.T\Source\Repos\BankApplication\BankApp_Methods\obj\Debug\netcoreapp3.1\BankApp_Methods.dll
+C:\Users\Dairo.T\Source\Repos\BankApplication\BankApp_Methods\obj\Debug\netcoreapp3.1\BankApp_Methods.pdb
