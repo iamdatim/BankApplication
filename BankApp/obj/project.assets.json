@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dairo.T\\Desktop\\Personnal Project\\BankApp\\BankApp.csproj",
+      "projectUniqueName": "C:\\Users\\Dairo.T\\Source\\Repos\\BankApplication\\BankApp\\BankApp.csproj",
       "projectName": "BankApp",
-      "projectPath": "C:\\Users\\Dairo.T\\Desktop\\Personnal Project\\BankApp\\BankApp.csproj",
+      "projectPath": "C:\\Users\\Dairo.T\\Source\\Repos\\BankApplication\\BankApp\\BankApp.csproj",
       "packagesPath": "C:\\Users\\Dairo.T\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dairo.T\\Desktop\\Personnal Project\\BankApp\\obj\\",
+      "outputPath": "C:\\Users\\Dairo.T\\Source\\Repos\\BankApplication\\BankApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +59,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Dairo.T\\Desktop\\Personnal Project\\BankApp_Methods\\BankApp_Methods.csproj": {
-              "projectPath": "C:\\Users\\Dairo.T\\Desktop\\Personnal Project\\BankApp_Methods\\BankApp_Methods.csproj"
+            "C:\\Users\\Dairo.T\\Source\\Repos\\BankApplication\\BankApp_Methods\\BankApp_Methods.csproj": {
+              "projectPath": "C:\\Users\\Dairo.T\\Source\\Repos\\BankApplication\\BankApp_Methods\\BankApp_Methods.csproj"
             }
           }
         }
