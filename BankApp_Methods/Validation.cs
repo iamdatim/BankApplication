@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -50,5 +51,11 @@ namespace BankApp_Methods
             // Use Regex.IsMatch to test the email against the pattern
             return Regex.IsMatch(password, PasswordPattern);
         }
+        public static bool UserExists(List<User> Users, User user)
+        {
+            return Users.Exists(u => u.UserName == user.UserName || u.Email == user.Email);
+        }
+
+
     }
 }

@@ -65,6 +65,8 @@ namespace BankApp
             {
                 MenuMessage.DisplayErrorMessage("User Does not exist", "Kindly register an account to be able to login");
             }
+
+            
         }
     }
 }

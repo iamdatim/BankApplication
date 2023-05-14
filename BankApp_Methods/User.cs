@@ -14,15 +14,9 @@ namespace BankApp_Methods
         public string AccountNumber { get; set; }
         public List<AccountRegistrationDetails> AccDetails { get; set; } = new List<AccountRegistrationDetails>();
 
-       // public List<User> Users = new List<User>();
+       
         public User Register(List<User> Users, string username, string email, string password)
         {
-
-            ////UserName = username;
-            ////Email = email;
-            ////Password = password;
-            //Users.Add(new User { UserName = username, Email = email, Password = password });
-
             User newUser = new User { UserName = username, Email = email, Password = password };
             Users.Add(newUser);
             return newUser;

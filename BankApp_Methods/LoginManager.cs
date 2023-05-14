@@ -7,11 +7,9 @@ namespace BankApp_Methods
 {
     public class LoginManager
     {
-       // private List<User> Users = new List<User>();
-
         public User Login(List<User> Users, string username, string password)
         {
-            foreach(var user in Users)
+            foreach(User user in Users)
             {
                 if(user.UserName == username && user.Password == password)
                 {

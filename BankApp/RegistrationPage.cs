@@ -9,7 +9,6 @@ namespace BankApp
     {
         public static void Registration(List<User> Users)
         {
-           // List<User> Users = new List<User>();
 
             User user = new User();
             Header.HeaderDisplay("Registration Page");
@@ -83,11 +82,18 @@ namespace BankApp
             }
 
             User newUser = user.Register(Users, username, email, password);
-           // User newUser = Register(Users, username, email, password);
             Users.Add(newUser);
-            //user.Register(username, email, password);
 
             MenuMessage.DisplaySucessMessage("Registration Sucessful");
+
+            if (Validation.UserExists(Users, user))
+            {
+                Console.WriteLine("User already exists!");
+            }
+            //else
+            //{
+            //    Console.WriteLine("User does not exist.");
+            //}
         }
     }
 }
