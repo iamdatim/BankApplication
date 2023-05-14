@@ -11,6 +11,7 @@ namespace BankApp
        
         public static void Entry()
         {
+            
             //Header.HeaderDisplay("Datim Bank Plc");
             while (true)
             {
@@ -43,7 +44,8 @@ namespace BankApp
                         break;
 
                     case "2":
-                        //Login.LoginMethod(users, TodoList);
+                        LoginPage loginpage = new LoginPage();
+                        loginpage.UserLogin();
                         break;
 
                     case "3":
