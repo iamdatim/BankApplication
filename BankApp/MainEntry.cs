@@ -8,14 +8,14 @@ namespace BankApp
 {
     internal class MainEntry
     {
-       
         public static void Entry()
         {
+            List<User> Users = new List<User>();
             
-            //Header.HeaderDisplay("Datim Bank Plc");
+            Header.HeaderDisplay("Datim Bank Plc");
             while (true)
             {
-                Header.HeaderDisplay("Datim Bank Plc");
+               // Header.HeaderDisplay("Datim Bank Plc");
                 Console.WriteLine(MenuMessage.MainEntryMenu);
 
                 string choice = Console.ReadLine();
@@ -40,12 +40,12 @@ namespace BankApp
                 switch (choice)
                 {
                     case "1":
-                        RegistrationPage.Registration();
+                        RegistrationPage.Registration(Users);
                         break;
 
                     case "2":
                         LoginPage loginpage = new LoginPage();
-                        loginpage.UserLogin();
+                        loginpage.UserLogin(Users);
                         break;
 
                     case "3":

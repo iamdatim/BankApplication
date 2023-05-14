@@ -7,15 +7,18 @@ namespace BankApp_Methods
 {
     public class Registration
     {
-        //public void Register(List<User> users, string username, string email, string password)
+        //public List<User> Users = new List<User>();
+        //public User Register(string username, string email, string password)
         //{
-        //    User user = new User();
 
-        //    user.UserName = username;
-        //    user.Email = email;
-        //    user.Password = password;
+        //    ////UserName = username;
+        //    ////Email = email;
+        //    ////Password = password;
+        //    //Users.Add(new User { UserName = username, Email = email, Password = password });
 
-        //   //users.Add(user);
+        //    User newUser = new User { UserName = username, Email = email, Password = password };
+        //    Users.Add(newUser);
+        //    return newUser;
         //}
     }
 }

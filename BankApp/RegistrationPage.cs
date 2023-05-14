@@ -7,11 +7,13 @@ namespace BankApp
 {
     internal class RegistrationPage
     {
-        public static void Registration()
+        public static void Registration(List<User> Users)
         {
-            Header.HeaderDisplay("Registration Page");
+           // List<User> Users = new List<User>();
 
             User user = new User();
+            Header.HeaderDisplay("Registration Page");
+
 
             MenuMessage.DisplayActionMessage("Please enter your username: ");
             string username = Console.ReadLine();
@@ -64,7 +66,7 @@ namespace BankApp
                     password = Console.ReadLine();
                 }
 
-                else if (!Validation.IsValidEmail(password))
+                else if (!Validation.IsValidPassword(password))
                 {
                     MenuMessage.DisplayErrorMessage("Password Requiremnet not met, Your Password must contain \nat least 1 Uppercase, Lowercase and Number", "Please enter a valid password:");
                     password = Console.ReadLine();
@@ -80,7 +82,10 @@ namespace BankApp
                 ConfirmPassword = Console.ReadLine();
             }
 
-            user.Register(username, email, password);
+            User newUser = user.Register(Users, username, email, password);
+           // User newUser = Register(Users, username, email, password);
+            Users.Add(newUser);
+            //user.Register(username, email, password);
 
             MenuMessage.DisplaySucessMessage("Registration Sucessful");
         }

@@ -7,19 +7,24 @@ namespace BankApp_Methods
 {
     public class LoginManager
     {
-        public List<User> Users = new List<User>();
+       // private List<User> Users = new List<User>();
 
-        public User Login(string loginusername, string loginpassword)
+        public User Login(List<User> Users, string username, string password)
         {
-            foreach(User user in Users)
+            foreach(var user in Users)
             {
-                if(user.UserName == loginusername && user.Password == loginpassword)
+                if(user.UserName == username && user.Password == password)
                 {
                     return user;
                 }
+
+                else
+                {
+                    return null;
+                }
             }
 
-            return  Users.FirstOrDefault(u => u.UserName == loginusername && u.Password == loginpassword);
+            return  Users.FirstOrDefault(u => u.UserName == username && u.Password == password);
         }
     }
 }
