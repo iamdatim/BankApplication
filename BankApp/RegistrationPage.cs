@@ -100,7 +100,7 @@ namespace BankApp
             }
 
             User newUser = user.Register(Users, username, email, password);
-            Users.Add(newUser);
+            //Users.Add(newUser);
 
             MenuMessage.DisplaySucessMessage("Registration Sucessful");
 

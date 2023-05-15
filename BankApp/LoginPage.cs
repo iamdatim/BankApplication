@@ -58,8 +58,56 @@ namespace BankApp
            // Header.HeaderDisplay("Login Page");
             if (LoggedInUser != null)
             {
+                Animation.LoginLoading();
                 Header.HeaderDisplay("Datim Bank Plc");
-                MenuMessage.DisplaySucessMessage("Login Sucessful");
+                //MenuMessage.DisplaySucessMessage("Login Sucessful");
+                while (true)
+                {
+                    // Header.HeaderDisplay("Datim Bank Plc");
+                    Console.WriteLine(MenuMessage.LoginEntryMenu);
+
+                    string choice = Console.ReadLine();
+                    Console.Clear();
+
+                    int type;
+                    while (Validation.TryParseInt(choice, out type))
+                    {
+                        Header.HeaderDisplay();
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine($"{choice} {MenuMessage.IntErrorMessage}");
+                        Console.ResetColor();
+                        Console.WriteLine($"{MenuMessage.ValidOptionMessage}");
+                        Console.WriteLine(MenuMessage.LoginEntryMenu);
+                        //Console.WriteLine(MenuMessage.EnterOption);
+                        choice = Console.ReadLine();
+                    }
+
+
+                   // Console.Clear();
+
+                    switch (choice)
+                    {
+                        case "1":
+                            RegistrationPage.Registration(Users);
+                            break;
+
+                        case "2":
+                            LoginPage loginpage = new LoginPage();
+                            loginpage.UserLogin(Users);
+                            break;
+
+                        case "3":
+                            Environment.Exit(0);
+                            break;
+
+                        default:
+                            Header.HeaderDisplay();
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine($"{choice} {MenuMessage.IntErrorMessage}");
+                            Console.ResetColor();
+                            break;
+                    }
+                }
             }
 
             else
