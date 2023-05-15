@@ -16,8 +16,9 @@ namespace BankApp
 
             MenuMessage.DisplayActionMessage("Please enter your username: ");
             string username = Console.ReadLine();
+            
             int value;
-            while (Validation.EmptyString(username) || !Validation.TryParseInt(username, out value))
+            while (Validation.EmptyString(username) || !Validation.TryParseInt(username, out value) || Users.Exists(x => x.UserName == username))
             {
                 if (Validation.EmptyString(username))
                 {
@@ -32,13 +33,19 @@ namespace BankApp
                     MenuMessage.DisplayErrorMessage("Name Shouldn't not contain number", "Please enter a valid username:");
                     username = Console.ReadLine();
                 }
+
+                else
+                {
+                    MenuMessage.DisplayErrorMessage("Username Already Exist", "Please enter another username:");
+                    username = Console.ReadLine();
+                }
             }
             Console.Clear();
 
             Header.HeaderDisplay("Registration Page");
             MenuMessage.DisplayActionMessage("Please enter your Email: ");
             string email = Console.ReadLine();
-            while (Validation.EmptyString(email) || !Validation.IsValidEmail(email))
+            while (Validation.EmptyString(email) || !Validation.IsValidEmail(email) || Users.Exists(x => x.Email == email))
             {
                 if (Validation.EmptyString(email))
                 {
@@ -49,6 +56,12 @@ namespace BankApp
                 else if (!Validation.IsValidEmail(email))
                 {
                     MenuMessage.DisplayErrorMessage("Not a valid email format", "Please enter a valid email:");
+                    email = Console.ReadLine();
+                }
+
+                else
+                {
+                    MenuMessage.DisplayErrorMessage("Email Already Exist", "Please enter another username:");
                     email = Console.ReadLine();
                 }
             }
@@ -81,15 +94,17 @@ namespace BankApp
                 ConfirmPassword = Console.ReadLine();
             }
 
+            if (Validation.UserExists(Users, user))
+            {
+                Console.WriteLine("User already exists!");
+            }
+
             User newUser = user.Register(Users, username, email, password);
             Users.Add(newUser);
 
             MenuMessage.DisplaySucessMessage("Registration Sucessful");
 
-            if (Validation.UserExists(Users, user))
-            {
-                Console.WriteLine("User already exists!");
-            }
+            
             //else
             //{
             //    Console.WriteLine("User does not exist.");

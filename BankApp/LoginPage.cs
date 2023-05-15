@@ -58,6 +58,7 @@ namespace BankApp
            // Header.HeaderDisplay("Login Page");
             if (LoggedInUser != null)
             {
+                Header.HeaderDisplay("Datim Bank Plc");
                 MenuMessage.DisplaySucessMessage("Login Sucessful");
             }
 

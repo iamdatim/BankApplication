@@ -53,9 +53,20 @@ namespace BankApp_Methods
         }
         public static bool UserExists(List<User> Users, User user)
         {
-            return Users.Exists(u => u.UserName == user.UserName || u.Email == user.Email);
+            return Users.Any(u => u.UserName == user.UserName || u.Email == user.Email);
         }
 
+        public static bool UserNameExist(List<User> Users,  User user)
+        {
+            if (Users.Exists(x => x.UserName == user.UserName))
+            {
+                return true;
+            }
 
+            else
+            {
+                return false;
+            }
+        }
     }
 }
