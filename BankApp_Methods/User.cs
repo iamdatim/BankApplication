@@ -12,7 +12,7 @@ namespace BankApp_Methods
         public string Password { get; set; }
         public string ConfirmPassword { get; set; }
         public string AccountNumber { get; set; }
-        public List<AccountRegistrationDetails> AccDetails { get; set; } = new List<AccountRegistrationDetails>();
+        public List<BankAccountDetails> AccDetails { get; set; } = new List<BankAccountDetails>();
 
        
         public User Register(List<User> Users, string username, string email, string password)

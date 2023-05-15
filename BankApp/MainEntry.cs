@@ -11,7 +11,8 @@ namespace BankApp
         public static void Entry()
         {
             List<User> Users = new List<User>();
-            
+            List<BankAccountDetails> UsersBankAccount = new List<BankAccountDetails>();
+
             Header.HeaderDisplay("Datim Bank Plc");
             while (true)
             {
