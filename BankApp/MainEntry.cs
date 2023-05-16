@@ -11,7 +11,7 @@ namespace BankApp
         public static void Entry()
         {
             List<User> Users = new List<User>();
-            List<BankAccountDetails> UsersBankAccount = new List<BankAccountDetails>();
+            List<BankAccount> UsersBankAccount = new List<BankAccount>();
 
             Header.HeaderDisplay("Datim Bank Plc");
             while (true)
@@ -46,7 +46,7 @@ namespace BankApp
 
                     case "2":
                         LoginPage loginpage = new LoginPage();
-                        loginpage.UserLogin(Users);
+                        loginpage.UserLogin(Users, UsersBankAccount);
                         break;
 
                     case "3":

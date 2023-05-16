@@ -7,12 +7,13 @@ namespace BankApp_Methods
 {
     public class User
     {
+        public Guid Id { get; set; } = Guid.NewGuid();
         public string UserName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
         public string ConfirmPassword { get; set; }
         public string AccountNumber { get; set; }
-        public List<BankAccountDetails> AccDetails { get; set; } = new List<BankAccountDetails>();
+        public List<BankAccount> UsersBankAccount { get; set; } = new List<BankAccount>();
 
        
         public User Register(List<User> Users, string username, string email, string password)
