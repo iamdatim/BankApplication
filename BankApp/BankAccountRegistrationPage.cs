@@ -60,7 +60,7 @@ namespace BankApp
             MenuMessage.DisplayActionMessage("Please enter Account Type e.g (Savings, Current, Credit): ");
             string accounttype = Console.ReadLine();
 
-            BankAccount newUserBankAccount = userBankAccount.CreateAccount(UsersBankAccount, firstname, lastname, middlename, email, address, city, state, postalcode, country, nationality, stateoforigin, localgovernmentoforigin, phonenumber, ocuppation, accounttype);
+            BankAccount newUserBankAccount = userBankAccount.CreateAccount(UsersBankAccount, LoggedInUser, firstname, lastname, middlename, email, address, city, state, postalcode, country, nationality, stateoforigin, localgovernmentoforigin, phonenumber, ocuppation, accounttype);
 
             MenuMessage.DisplaySucessMessage(" Bank Account Registration Sucessful");
         }

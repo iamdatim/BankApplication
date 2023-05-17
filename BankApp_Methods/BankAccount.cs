@@ -24,7 +24,7 @@ namespace BankApp_Methods
         public Guid UserId { get; set; }
 
 
-        public BankAccount CreateAccount(List<BankAccount> UsersBankAccount, string firstname, string lastname, string middlename,
+        public BankAccount CreateAccount(List<BankAccount> UsersBankAccount, User LoggedInUser, string firstname, string lastname, string middlename,
            string email, string address, string city, string state, int postalcode, string country,
            string nationality, string stateoforigin, string localgovernmentoforigin, string phonenumber, string accounttype, string ocuppation)
         {
@@ -47,7 +47,7 @@ namespace BankApp_Methods
                 Occupation = ocuppation
             };
 
-            UsersBankAccount.Add(newBankAccount);
+            LoggedInUser.UsersBankAccount.Add(newBankAccount);
             return newBankAccount;
 
         }

@@ -8,10 +8,13 @@ namespace BankApp
 {
     internal class MainEntry
     {
+       // public static List<BankAccount> UsersBankAccount { get; private set; }
+
         public static void Entry()
         {
             List<User> Users = new List<User>();
-            List<BankAccount> UsersBankAccount = new List<BankAccount>();
+            List<BankAccount> UsersBankAccount = null;
+           // List<BankAccount> UsersBankAccount = new List<BankAccount>();
 
             Header.HeaderDisplay("Datim Bank Plc");
             while (true)

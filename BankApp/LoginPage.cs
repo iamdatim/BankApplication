@@ -53,9 +53,11 @@ namespace BankApp
             }
 
            // User currentUser = users.FirstOrDefault(x => x.Username == loginUsername && x.Password == loginPassword);
-            User LoggedInUser = loginManager.Login(Users, username, password);
+            User newUser = loginManager.Login(Users, username, password);
 
-           // Header.HeaderDisplay("Login Page");
+            User LoggedInUser = Users.FirstOrDefault(u => u.UserName == username && u.Password == password);
+
+            // Header.HeaderDisplay("Login Page");
             if (LoggedInUser != null)
             {
                 Animation.LoginLoading();
