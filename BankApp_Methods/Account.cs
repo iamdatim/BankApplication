@@ -7,19 +7,11 @@ namespace BankApp_Methods
     {
         public Guid Id { get; set; }
         public string AccountNumber { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string MiddleName { get; set; }
+        
         public string Email { get; set; }
-        public string Address { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public string StateOfOrigin { get; set; }
-        public string LocalGovernmentOfOrigin { get; set; }
-        public int PostalCode { get; set; }
-        public string Country { get; set; }
-        public string Nationality { get; set; }
-        public string PhoneNumber { get; set; }
+        
+        
+        
         public string AccountType { get; set; }
         public string Occupation { get; set; }
         public Guid UserId { get; set; }
