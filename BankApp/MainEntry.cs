@@ -13,7 +13,7 @@ namespace BankApp
         public static void Entry()
         {
             List<User> Users = new List<User>();
-            List<BankAccount> UsersBankAccount = null;
+            List<Account> Accounts = null;
            // List<BankAccount> UsersBankAccount = new List<BankAccount>();
 
             Header.HeaderDisplay("Datim Bank Plc");
@@ -49,7 +49,7 @@ namespace BankApp
 
                     case "2":
                         LoginPage loginpage = new LoginPage();
-                        loginpage.UserLogin(Users, UsersBankAccount);
+                        loginpage.UserLogin(Users, Accounts);
                         break;
 
                     case "3":

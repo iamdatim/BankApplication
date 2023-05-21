@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tY7lp6qojUfhOCDBmLOrZCC+f+M38WKK1l/NvasPPaoka8jL9BKqp6Y5dRd5tcbCxYH8ooZ37q2+heo64h+y8g==",
+  "dgSpecHash": "RMLvQp77GhOKNOiBOVjHiizYazrGsTNkKx7bd2Wi3E2kR6VeuEb6ytb7cPCuC/E06IEk+6YzM/j4d7Lyxqg6rg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dairo.T\\source\\repos\\BankApplication\\BankApp_Methods\\BankApp_Methods.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Dairo.T\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

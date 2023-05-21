@@ -11,9 +11,7 @@ namespace BankApp_Methods
         public string UserName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string ConfirmPassword { get; set; }
-        public string AccountNumber { get; set; }
-        public List<BankAccount> UsersBankAccount { get; set; } = new List<BankAccount>();
+        public List<Account> Accounts { get; set; } = new List<Account>();
 
        
         public User Register(List<User> Users, string username, string email, string password)

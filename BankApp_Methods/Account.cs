@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace BankApp_Methods
 {
-    public class BankAccount
+    public  class Account
     {
         public Guid Id { get; set; }
+        public string AccountNumber { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string MiddleName { get; set; }
@@ -24,11 +25,11 @@ namespace BankApp_Methods
         public Guid UserId { get; set; }
 
 
-        public BankAccount CreateAccount(List<BankAccount> UsersBankAccount, User LoggedInUser, string firstname, string lastname, string middlename,
+        public Account CreateAccount(List<Account> UsersBankAccount, User LoggedInUser, string firstname, string lastname, string middlename,
            string email, string address, string city, string state, int postalcode, string country,
            string nationality, string stateoforigin, string localgovernmentoforigin, string phonenumber, string accounttype, string ocuppation)
         {
-            BankAccount newBankAccount = new BankAccount
+            Account newBankAccount = new Account
             {
                 FirstName = firstname,
                 LastName = lastname,
@@ -47,7 +48,7 @@ namespace BankApp_Methods
                 Occupation = ocuppation
             };
 
-            LoggedInUser.UsersBankAccount.Add(newBankAccount);
+            LoggedInUser.Accounts.Add(newBankAccount);
             return newBankAccount;
 
         }

@@ -9,7 +9,7 @@ namespace BankApp
     internal class LoginPage
     {
         private LoginManager loginManager = new LoginManager();
-        public void UserLogin(List<User> Users, List<BankAccount> UsersBankAccount)
+        public void UserLogin(List<User> Users, List<Account> Accounts)
         {
             Header.HeaderDisplay("Login Page");
 
@@ -90,12 +90,12 @@ namespace BankApp
                     switch (choice)
                     {
                         case "1":
-                            BankAccountRegistrationPage.BankAccountRegistration(UsersBankAccount, LoggedInUser);
+                            AccountRegistrationPage.BankAccountRegistration(Accounts, LoggedInUser);
                             break;
 
                         case "2":
                             LoginPage loginpage = new LoginPage();
-                            loginpage.UserLogin(Users, UsersBankAccount);
+                            loginpage.UserLogin(Users, Accounts);
                             break;
 
                         case "3":
