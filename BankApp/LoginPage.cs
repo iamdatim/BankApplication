@@ -90,7 +90,7 @@ namespace BankApp
                     switch (choice)
                     {
                         case "1":
-                            AccountRegistrationPage.BankAccountRegistration(Accounts, LoggedInUser);
+                           // AccountRegistrationPage.BankAccountRegistration(Accounts, LoggedInUser);
                             break;
 
                         case "2":
